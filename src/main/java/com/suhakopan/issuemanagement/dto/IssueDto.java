@@ -1,16 +1,25 @@
 package com.suhakopan.issuemanagement.dto;
 
 import com.suhakopan.issuemanagement.entity.IssueStatus;
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
 
 import java.util.Date;
-
+@ApiModel(value = "Issue Data Transfer Object")
 public class IssueDto {
+    @ApiModelProperty(value = "Issue ID")
     private Long id;
+    @ApiModelProperty(required = true, value = "Issue Description")
     private String description;
+    @ApiModelProperty(required = true, value = "Issue Detail")
     private String details;
+    @ApiModelProperty(required = true, value = "Issue Date")
     private Date date;
+    @ApiModelProperty(required = true, value = "Issue Status")
     private IssueStatus issueStatus;
+    @ApiModelProperty(required = true, value = "Issue Assignee")
     private UserDto assignee;
+    @ApiModelProperty(required = true, value = "Issue Project")
     private ProjectDto project;
 
     public Long getId() {
