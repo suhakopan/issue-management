@@ -1,0 +1,17 @@
+[
+  {
+    "_class": "com.suhakopan.issuemanagement.entity.Project",
+    "projectCode": "IM",
+    "projectName": "Issue Management Project"
+  },
+  {
+    "_class": "com.suhakopan.issuemanagement.entity.Project",
+    "projectCode": "ERP-S",
+    "projectName": "Erp Project for Sales"
+  },
+  {
+    "_class": "com.suhakopan.issuemanagement.entity.Project",
+    "projectCode": "CRM-S",
+    "projectName": "CRM Project for Sales"
+  }
+]
